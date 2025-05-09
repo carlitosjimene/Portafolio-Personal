@@ -1,0 +1,148 @@
+/* Estilos generales */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1em;
+}
+
+section {
+  padding: 2em;
+  margin-bottom: 2em;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #333;
+  text-align: center;
+}
+
+/* Estilos para la sección de bienvenida */
+#welcome-section {
+  background-color: #e0f7fa; /* Un tono azul claro */
+  padding: 5em 2em;
+}
+
+#welcome-section h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  color: #00838f; /* Un tono azul más oscuro */
+}
+
+#welcome-section h2 {
+  font-size: 1.5em;
+  color: #26a69a; /* Un tono verde azulado */
+}
+
+/* Estilos para la sección de proyectos */
+#projects {
+  background-color: #f9fbe7; /* Un tono amarillo claro */
+}
+
+#projects h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #afb42b; /* Un tono verde oliva */
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.project-tile {
+  background-color: #fffde7; /* Otro tono amarillo claro */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px; /* Ancho fijo para los proyectos */
+}
+
+.project-tile a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-tile img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-tile p {
+  padding: 1em;
+  text-align: center;
+  background-color: #fff8e1; /* Un tono amarillo aún más claro */
+}
+
+/* Estilos para la sección de contacto */
+#contact {
+  background-color: #fce4ec; /* Un tono rosa claro */
+}
+
+#contact h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #d81b60; /* Un tono rosa más oscuro */
+}
+
+#contact p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #ad1457; /* Otro tono rosa */
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-tile {
+    width: 90%;
+  }
+
+  nav a {
+    margin: 0 0.5em;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+}
+
+/* Animaciones sutiles */
+nav a:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.project-tile:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.2s ease-in-out;
+}
